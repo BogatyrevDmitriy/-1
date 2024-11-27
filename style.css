@@ -1,0 +1,174 @@
+/* Сброс базовых стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Стили для заголовка */
+.header {
+  background-color: #4caf50;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2em;
+}
+
+/* Стили для основного контента */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Блок описания */
+.description {
+  margin-bottom: 30px;
+}
+
+.description h2 {
+  font-size: 1.8em;
+  color: #4caf50;
+  margin-bottom: 15px;
+}
+
+.description p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* Блок цифр и фактов */
+.digits h2 {
+  font-size: 1.8em;
+  color: #2196f3;
+  margin-bottom: 15px;
+}
+
+.digits h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.digits ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.digits li {
+  background-color: #e3f2fd;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-left: 5px solid #2196f3;
+}
+
+/* Блок метода Фейнмана */
+.feynman {
+  background-color: #fff3e0;
+  border-left: 5px solid #ffa726;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.feynman h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+/* Блок принципов Кауфмана */
+.kaufman {
+  margin-bottom: 30px;
+}
+
+.kaufman h2 {
+  font-size: 1.8em;
+  color: #ff5722;
+  margin-bottom: 15px;
+}
+
+.kaufman ol {
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+.kaufman li {
+  margin-bottom: 10px;
+}
+
+/* Стили для футера */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer h3 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer li {
+  margin: 0;
+}
+
+.footer a {
+  color: #4caf50;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+body.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-theme .header {
+  background-color: #222;
+}
+
+body.dark-theme .footer {
+  background-color: #111;
+}
+
+body.dark-theme a {
+  color: #4caf50;
+}
+
+body.dark-theme .digits li {
+  background-color: #555;
+  border-left-color: #4caf50;
+}
